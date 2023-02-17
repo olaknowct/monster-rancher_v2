@@ -18,8 +18,6 @@ const App = () => {
 
   // Run Once, and rerun again when monsters or search field is different from previous state
   useEffect(() => {
-    console.log('effect firing');
-
     const newFilteredMonsters = monsters.filter((monster) => monster.name.toLocaleLowerCase().startsWith(searchField));
 
     setFilterMonsters(newFilteredMonsters);
