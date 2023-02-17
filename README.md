@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# monster-rancher
+link : https://olaknowct.github.io/monster-rancher/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Configuration
+- The repo project has 2 branch. If you need to check my development commits, switched to master branch.
+- Otherwise gh-pages branch are product of "npm run deploy" script from package.json that automates the production build and deployment process. 
 
-## Available Scripts
+### Description
+- I named the project as monster rancher, the app kinda like a movie(monster rancher) that i watched and used to play at early stage of my age.
 
-In the project directory, you can run:
+### About
+- The project is a basic react project wherein it gives you functionality of searching a monster.
+- It uses 2 API to generate dummy data and source image.
 
-### `npm start`
+### Purpose
+- The main purpose of creating this project is to get a good grasp of basic fundamental of React Library.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Concepts
+- React and ReactDOM
+- Classes Optimization
+- pure and impure functions
+- Class and functional component and its differences 
+- JSX
+- Unidirectional flow
+- Class Component Lifecycle Methods
+- Props
+- Hooks (useStates, useEffects)
+- Event Handler
+- CSS in React
+- DOM and VirtualDOM
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Takeaway
+- Components has access to the states and we can also set it states.
+- JXS is responsible for creating a VIRTUAL DOM, its pretty much HTML alike and does mimic it,
+  - when can add attribute on custom component inside JXS and passed into component as props 
+- I've learned that when we see that the component can be used from multiple place, then we need to break it down into component as much as possible this is to make optimize and efficient
+- from class component, for it to be optimized, a function build outside of the render will be just a reference. It will not reinitialize the anonymous function over and over again 
+- State becomes props when it gets passed down to components, its a uni-directional flow wherein the data can only flow one way.
+- Unidirectional in the sense of when state sets, all under HTML tree where the states lives will be updated and rerendered to DOM
+- When DOM changes
+  - Virtual DOM : React create a copy of Real DOM (current DOM)  
+  - New DOM : React create a copy of Virtual DOM with its changes
+  - Updated DOM : updating only the Element that changes by comparing Current DOM and Virtual DOM
+- Lifycycle methods gets called automatically from every different stages
+- We have syntetic events on Virtual DOM. DOM API events for HTML 
+- Functional component
+  - does not have THIS keyword nor parent element
+  - Utilize hooks in order to replicate a very similar behavior as we see in class comments
+  - does get some props (attributes that we passed) and return JXS
+  - Doesn't have lifecycle methods
+- Class Component
+  - inheritance
+  - gets access to THIS and parent class
+  - has lifecycle methods
+  - lots of method available 
+- Hooks
+  - setStates with an object
+  - setStates with a function
+  - useEffect for any side effects
+  
+### API used
+- https://robohash.org/
+- https://jsonplaceholder.typicode.com/users
