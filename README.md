@@ -1,5 +1,5 @@
 # monster-rancher
-link : https://olaknowct.github.io/monster-rancher/
+link : https://monster-rancher.netlify.app/
 
 ### Configuration
 - The repo project has 2 branch. If you need to check my development commits, switched to master branch.
@@ -28,6 +28,7 @@ link : https://olaknowct.github.io/monster-rancher/
 - Event Handler
 - CSS in React
 - DOM and VirtualDOM
+- TypeScripts Basics
 
 ### Takeaway
 - Components has access to the states and we can also set it states.
