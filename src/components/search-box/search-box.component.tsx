@@ -1,5 +1,5 @@
 import './search-box.styles.css';
-import { ChangeEvent, ChangeEventHandler } from 'react';
+import { ChangeEvent } from 'react';
 
 interface ISearchBoxProps extends IChangeHandlerProps {
   className: string;
