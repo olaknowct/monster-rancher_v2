@@ -1,10 +1,6 @@
 # monster-rancher
 link : https://monster-rancher.netlify.app/
 
-### Configuration
-- The repo project has 2 branch. If you need to check my development commits, switched to master branch.
-- Otherwise gh-pages branch are product of "npm run deploy" script from package.json that automates the production build and deployment process. 
-
 ### Description
 - I named the project as monster rancher, the app kinda like a movie(monster rancher) that i watched and used to play at early stage of my age.
 
